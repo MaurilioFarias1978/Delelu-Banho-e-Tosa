@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Banho e Tosa</title>
+    <link rel="stylesheet" href="../../public/css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h3>Seu Pet sempre em Boas Mãos</h3>
+        <span>Porque seu Pet merece sempre o melhor</span>
+      </header>
+      <nav>
+        <h3>Banho e Tosa</h3>
+        <a href="#docs">Quem Somos</a
+        ><a href="https://github.com/MaurilioFarias1978/Delelu-Banho-e-Tosa" target="_blank"
+          >Seu pet nossa vida</a
+        >
+      </nav>
+      <main>
+        <div class="background-filter"></div>
+        <div class="content">
+          <h1>Traga seu Pet!<br />Vocês merecem toda a nossa atenção.</h1>
+          <a href="#docs">Quem Somos</a>
+        </div>
+      </main>
+      <section >
+        <h1 class="title" id="docs">Nossa História</h1>
+        <article>
+          <div style="text-align: center;" class="content-article">
+            <h3>Quem Somos?</h3>
+            <p>
+              Apaixonados por Pets. Após um longo periodo  de preparação. Nos 
+              especializamos para servir o que existe de melhor referente ao bem
+              estar do seu pet.
+              Desde um simples banho até um banho com tosa geral, tudo com aplicação 
+              dos produtos da mais alta qualidade para o seu Pet.
+              </section>
+      <footer>
+        <span>Desenvolvido por  Maurilio Cicero Baseado projeto publico do GitHub</span>
+        <h3 class="logo-dancing">Banho e Tosa</h3>
+      </footer>
+    </div>
+
+    <script>
+      function changeWindow(context, first) {
+        let target = first ? 'focus-1' : 'focus-2';
+        let focused = document.querySelector('.' + target);
+
+        console.log(focused.id)
+        focused.classList.remove(target);
+        document
+          .querySelector(`#${focused.id.replace('-window', '')}`)
+          .classList.add('invisible');
+
+        document.querySelector(`#${context}`).classList.remove('invisible');
+        document.querySelector(`#${context}-window`).classList.add(target);
+      }
+    </script>
+  </body>
+</html>
